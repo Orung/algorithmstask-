@@ -3,11 +3,9 @@
 
 ## A collection of algorythms
 
-### Write a function named "convertFahrToCelsius" that takes a single parameter and converts it to celsius.
-
- 
-
-Note:
+### convertFahrToCelsius
+Write a function named "convertFahrToCelsius" that takes a single parameter and converts it to celsius.
+#### Note:
 
 - Round up your answers to 4 decimal places (hint: use the toFixed method)
 - C = (F - 32) x 5/9; (e.g 0deg F = -17.7778 deg C)
