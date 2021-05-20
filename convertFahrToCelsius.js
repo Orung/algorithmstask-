@@ -1,11 +1,14 @@
-function convertFahrToCelsius(e){
-   let celsius = (e - 32) * 5/9 ;
-   if(Array.isArray(e)){
-       return `[${e}] is not a valid number but a/an array.`
-   }else if(isNaN(e) && !Array.isArray(e) && typeof e != 'object'){
-       return `${e} is not a valid number`
-   }else if(typeof e == 'object' && !Array.isArray(e)) {
-       return `${JSON.stringify(e)} is not a valid number but a/an object.`;
+//Write a function named "convertFahrToCelsius" that takes a single parameter and converts it to celsius.
+
+
+function convertFahrToCelsius(convert){
+   let celsius = (convert - 32) * 5/9 ;
+   if(Array.isArray(convert)){ // checking if it's an array
+       return `[${convert}] is not a valid number but an array.`;
+   }else if(isNaN(convert) && !Array.isArray(convert) && typeof convert != 'object'){ //checking strictly for not a number type
+       return `${convert} is not a valid number`;
+   }else if(typeof convert == 'object' && !Array.isArray(convert)) { //
+       return `${JSON.stringify(convert)} is not a valid number but an object.`;
    }
    else {
        return `${celsius.toFixed(4)} deg C`;
